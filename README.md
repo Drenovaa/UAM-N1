@@ -1,4 +1,4 @@
 # UAM-N1
 Atividade - UAM
 
-### ALTERAÇÃO
+print ("Você está na sala 1, qual cor deseja escolher?)
