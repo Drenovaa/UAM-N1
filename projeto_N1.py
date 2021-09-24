@@ -1,4 +1,3 @@
-
 import random
 import time
 
@@ -7,6 +6,7 @@ sala = 1
 jogada = 0
 LIMIT_PLAYS = 7
 cont = 0
+
 def res():
     global plays
     global sala
@@ -29,6 +29,8 @@ def main():
     global cont
     global jogada
     while (plays < LIMIT_PLAYS): 
+        
+
         print("Você está na sala {} ".format(sala))
         print("Escolha Seu caminho:")
         print("[1]- Caminho Vermelho")
@@ -41,11 +43,13 @@ def main():
             time.sleep(1)
 
     print("Game Over!") 
+    print("Você excedeu o numero de jogadas!") 
     res ()                       
                 
-  
+ 
 
 def verif():
+    
     global sala
     global jogada 
     global plays
@@ -76,6 +80,36 @@ def verif():
     if (sala == 9):      
         print("You Win! ")  
         res()        
-    
+    print("...") 
+    time.sleep(2) 
+    print("A caminho")  
+    print("...") 
+    time.sleep(2) 
+    print("...") 
 
-main()
+
+
+
+def menu():
+    print("Bem Vindo ao Jogo do Labirinto!!!")
+    print("[1]-Iniciar o Game!")
+    print("[2]- Ler as Regras")
+    esc = int(input())
+    if (esc == 1):
+        print("...") 
+        time.sleep(2) 
+        print("...")  
+        print("...") 
+        time.sleep(2) 
+        print("...")  
+        main()
+    elif (esc == 2):
+        print("Regras do Jogo: Você deve escolher entre dois caminhos [1]-Caminho Vermelho e [2]-Caminho Preto seu objetivo é chegar até a sala 9, mas cuidado você tem apenas 7 jogadas ")
+        time.sleep(10)
+        menu()
+    else:
+        print("Valor Invalido")
+        time.sleep(2)
+        menu()
+
+menu()
