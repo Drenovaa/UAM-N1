@@ -1,1 +1,3 @@
-### Repositório referente a aulas de Técnicas de Programação na Anhembi Morumbi - 202120.00221.01
+### Repositório referente a aulas na Anhembi Morumbi
+### Técnicas de Programação - 202120.00221.01
+<hr>
