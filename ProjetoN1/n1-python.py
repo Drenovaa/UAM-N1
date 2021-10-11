@@ -22,3 +22,33 @@ def incluiNome ():
     nome=input("Digite o nome completo : ")
     nomeCompleto.append(nome)
     return
+
+def incluiE_mail():
+    endereco=input("Digite o e_mail completo : ")
+    while endereco.count('@') == 0:
+        endereco=input("e-mail inválido. Digite o e_mail completo : ")
+    eMail.append(endereco)
+    print("Cadastro realizado")
+    time.sleep(2) 
+    print("...")  
+    time.sleep(2) 
+    print("...") 
+    return
+
+def imprimirAlfabeto():
+    alfabeto=sorted(nomeCompleto)
+    
+    for i in alfabeto :
+        print (i)
+    time.sleep(3)
+    retornoMenuInicial()
+
+def imprimir():
+    for i in nomeCompleto :
+        print (i)
+    time.sleep(4) 
+    print("...")  
+    time.sleep(3) 
+    print("...")     
+    retornoMenuInicial()
+
