@@ -52,3 +52,34 @@ def imprimir():
     print("...")     
     retornoMenuInicial()
 
+def procuraNome ():
+    nome=input("Digite o nome que está procurando : ")
+    n=-1
+    for i in nomeCompleto :
+        if nome in i :
+            print (i)
+            n=1
+            time.sleep(5)
+            retornoMenuInicial()
+    if n==-1 :
+        print("Nome não encontrado ")
+    return
+
+def remove():
+    e_mail=input("Digite o e-mail do usuario que deseja remover : ")
+    x=-1
+    for i in eMail :
+        if e_mail==i :
+            x=eMail.index(e_mail)
+            eMail.remove(e_mail)
+            nomeCompleto.pop(x)
+            time.sleep(6)
+            print("Foi removido o e-mail {} e usuario ". format(e_mail ))
+            time.sleep(5)
+    if x==-1 :
+        print("Não foi encontrado o e-mail{} ".format(e_mail))
+    print (eMail)
+    time.sleep(5)
+    print (nomeCompleto)
+    time.sleep(3)
+    retornoMenuInicial()
