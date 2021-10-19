@@ -113,3 +113,25 @@ def menu():
     while escolha < 1 or escolha > 7 :
         escolha=int(input("Opção inválida. Digite novamente a opção desejada : "))
     return escolha
+
+def main():
+    dado=menu()
+    if dado == 1 :
+        incluiNome()
+        incluiE_mail()
+    if dado == 2 :
+        imprimir()
+    if dado == 3 :
+        imprimirAlfabeto()
+    if dado == 4 :
+        procuraNome()
+    if dado ==5 :
+        remove()
+    if dado == 6:
+        trocarNome() 
+    if dado == 7:
+        exit(0)
+    main()
+
+if __name__=="__main__":
+    main()
