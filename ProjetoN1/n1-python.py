@@ -83,3 +83,33 @@ def remove():
     print (nomeCompleto)
     time.sleep(3)
     retornoMenuInicial()
+def trocarNome():
+    e_mail=input("Digite o e-mail do nome do usuario que deseja alterar : ")
+    n=-1
+    for i in eMail :
+        if e_mail==i :
+            x=eMail.index(e_mail)
+            nomeCompleto[x]=input("Altere o nome do usuario cadastrado no sistema ")
+            time.sleep(5)
+            print("Foi alterado o usuario {} do e-mail {} ". format(nomeCompleto[x], e_mail ))
+            time.sleep(3)
+    if x==-1 :
+        print("Não foi encontrado o e-mail{} ".format(e_mail))
+    print (nomeCompleto)
+    retornoMenuInicial()
+
+def menu():
+    print("*******************************************************************")
+    print("***************************--MENU--********************************")
+    print("*******************************************************************")
+    print("(1) Cadastro de novos usuários :")
+    print("(2) Exibição de todos os usuários cadastrados (ordem de cadastro) :")
+    print("(3) Exibição de todos os usuários cadastrados (ordem alfabética) :")
+    print("(4) Verificação da existência do usuário (por nome) :")
+    print("(5) Remoção do usuário (busca por e-mail) :")
+    print("(6) Alteração do nome do usuário (busca por e-mail) :")
+    print("(7) Sair do menu de cadastro : ")
+    escolha=int(input("Digite a opção desejada : "))
+    while escolha < 1 or escolha > 7 :
+        escolha=int(input("Opção inválida. Digite novamente a opção desejada : "))
+    return escolha
